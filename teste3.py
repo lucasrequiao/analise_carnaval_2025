@@ -1,5 +1,5 @@
+import matplotlib.cm as cm
 import matplotlib.colors as mcolors
-from matplotlib import cm
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -15,8 +15,6 @@ st.set_page_config(layout="wide")
 # Carregar o arquivo CSV
 file_path = "carnaval2025_updated.csv"
 df = pd.read_csv(file_path)
-
-st.dataframe(df)
 
 # Converter colunas para formato datetime
 df["inicio_data"] = pd.to_datetime(df["inicio_data"])
@@ -43,7 +41,6 @@ for _, row in df.iterrows():
         current_time += datetime.timedelta(hours=1)
 
 df_expanded = pd.DataFrame(time_range)
-st.dataframe(df_expanded)
 
 st.title("Análise de Público no Carnaval 2025")
 #rain(emoji="🎉", font_size=80, falling_speed=5, animation_length=1)
