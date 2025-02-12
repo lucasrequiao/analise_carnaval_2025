@@ -1,5 +1,5 @@
-import matplotlib.cm as cm
 import matplotlib.colors as mcolors
+from matplotlib import cm
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
