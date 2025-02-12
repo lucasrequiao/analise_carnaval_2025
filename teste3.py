@@ -139,7 +139,7 @@ color_mapper = cm.ScalarMappable(norm=norm, cmap="coolwarm")
 df_agg["color"] = df_agg["Número de Eventos"].apply(lambda x: mcolors.rgb2hex(color_mapper.to_rgba(x)))
 
 # Exibir o dataframe agregado (opcional)
-st.dataframe(df_agg)
+#st.dataframe(df_agg)
 
 st.subheader("Distribuição do Público Previsto e Efetivo por Hora e Quantidade de Eventos")
 
